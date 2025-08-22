@@ -104,5 +104,6 @@ Hello World
 3. Add this repo as the **source stage** in **AWS CodePipeline**.
 4. Connect CodeBuild with the provided `buildspec.yml`.
 5. Trigger the pipeline → It will build the Docker image and run the script.
+6. Delete ECR Public Repo.
 
 ---
