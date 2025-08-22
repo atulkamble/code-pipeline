@@ -1,8 +1,3 @@
-Here’s a **starter `README.md`** you can drop into your `code-pipeline` repo. It’s simple, clear, and aligned with your files (`helloworld.py`, `Dockerfile`, `buildspec.yml`).
-
----
-
-```markdown
 # 🚀 Code Pipeline – Hello World
 
 This repository demonstrates a **basic AWS CodePipeline + CodeBuild project** using Python and Docker.  
@@ -111,14 +106,3 @@ Hello World
 5. Trigger the pipeline → It will build the Docker image and run the script.
 
 ---
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-Would you like me to also include **step-by-step AWS CLI commands** to set up the CodePipeline (so you can literally copy-paste to create the pipeline), or keep this README lightweight?
-```
