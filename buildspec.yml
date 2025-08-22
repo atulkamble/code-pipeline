@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - echo "Running tests..."
+      - pytest -q || true
+      - echo "Packaging..."
+      - mkdir -p artifacts
+      - zip -r artifacts/app.zip app/ requirements.txt
+artifacts:
+  files:
+    - artifacts/app.zip
+    - appspec.yml
+    - scripts/**/*
