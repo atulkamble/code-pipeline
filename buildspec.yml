@@ -1,1 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - echo "Installing dependencies (if any)..."
+      - pip install --upgrade pip
+  pre_build:
+    commands:
+      - echo "Pre-build phase: nothing to do here."
+  build:
+    commands:
+      - echo "Building Docker image..."
+      - docker build -t helloworld:latest .
+  post_build:
+    commands:
+      - echo "Running container..."
+      - docker run --rm helloworld:latest
+
+artifacts:
+  files:
+    - '**/*'
 
