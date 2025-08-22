@@ -1,6 +1,6 @@
 # 🚀 Code Pipeline – Hello World
 
-This repository demonstrates a **basic AWS CodePipeline + CodeBuild project** using Python and Docker.  
+**Basic AWS CodePipeline + CodeBuild project** using Python and Docker.  
 It builds a Docker image that runs a simple **Hello World** Python script.
 
 ---
